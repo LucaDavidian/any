@@ -268,7 +268,7 @@ Any<SIZE>::Any(Any const &other) : Any()
 }
 
 template <size_t SIZE>
-Any<SIZE>::Any(Any &&other)
+Any<SIZE>::Any(Any &&other) : Any()
 {
     if (!other.mVTable)  // empty Any
         return;
